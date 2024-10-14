@@ -17,11 +17,28 @@
   :global(body){
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
+
+    .CardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    max-width: 50%; 
+    padding-top: 5%;
+    margin: 0 auto; 
+  }
+
+
 </style>
 
-<Header />
+
 <WelcomeSection text={text}/>
-<Card section={"Licenciaturas"}/>
+<div class="CardContainer">
+  <Card section={"Diplomaturas"}/>
+  <Card section={"Tecnicaturas"}/>
+  <Card section={"Licenciaturas"}/>
+  <Card section={"Maestrías"}/>
+  <Card section={"Ingenierías"}/>
+  <Card section={"Especializaciones"}/>
+</div>
 <CardGrid {data} />
 <DescriptionSection />
 <Footer />
