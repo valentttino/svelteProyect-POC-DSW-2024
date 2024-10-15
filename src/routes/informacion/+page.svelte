@@ -1,7 +1,7 @@
 <script>
   import Header from '../../components/Header.svelte'
   import CardGrid from '../../components/CardGrid.svelte'
-
+  import Footer from '../../components/Footer.svelte'
 
   let sections = [{section: "Autogestión Alumnos", icon: "../assets/user-icon.svg"},
                   {section: "Autogestión Docentes", icon: "../assets/user-icon.svg"},
@@ -15,3 +15,5 @@
 <section>
   <CardGrid itemsInfo={sections}/>
 </section>
+
+<Footer />
