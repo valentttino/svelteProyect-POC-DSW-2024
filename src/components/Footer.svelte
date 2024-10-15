@@ -16,7 +16,7 @@
 </style>
 
 <footer>
-  <p><strong>&copy; 2024 Boggio Valentino, Larrauri Martina, Leali Bruno, Zapata Nicolás. Todos los derechos reservados.</strong></p>
+  <p><strong>&copy; 2024 Boggio Valentino, Larrauri Martina, Leali Bruno, Zapata Nicolás.</strong></p>
   <p><strong>Todos los derechos reservados.</strong></p>
   <p>PoC - Desarrollo de Software</p>
   <p>UTN Rosario</p>

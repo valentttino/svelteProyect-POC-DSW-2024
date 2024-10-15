@@ -8,16 +8,16 @@
 
   import data from '../data/data.json'
   
-  let sections = [{section: "diplomaturas", icon: "../assets/diploma-icon.svg"},
+  let sections = [{section: "Diplomaturas", icon: "../assets/diploma-icon.svg"},
                   {section: "Tecnicaturas", icon: "../assets/diploma-icon.svg"},
                   {section: "Licenciaturas", icon: "../assets/diploma-icon.svg"},
                   {section: "Maestrías", icon: "../assets/diploma-icon.svg"},
                   {section: "Ingenierías", icon: "../assets/diploma-icon.svg"},
                   {section: "Especializaciones", icon: "../assets/diploma-icon.svg"}
-                ];
-  console.log(data);
+                ]
+  console.log(data)
 
-  const text="Bienvenido a la UTN Rosario";
+  const text="Bienvenido a la UTN Rosario"
 </script>
 
 <style>
