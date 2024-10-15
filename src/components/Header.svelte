@@ -1,4 +1,5 @@
 <script>
+  import { page } from '$app/stores'
   const utnLogo = "https://caimasegall.com.ar/wp-content/uploads/2020/08/logo-UTN-1.png"
 </script>
 
@@ -42,18 +43,33 @@
   a:hover {
     color: #333;
   }
+
+  .active {
+    font-weight: bold; 
+    border-bottom: 2px solid #201E43;
+  }
 </style>
 
 <header>
   <nav>
     <ul>
       <li>
-        <img src={utnLogo} alt="UTN Logo">
+        <a href="/">
+          <img src={utnLogo} alt="UTN Logo">
+        </a>
       </li>
-      <li><a href="/">Inicio</a></li>
-      <li><a href="/carreras">Carreras</a></li>
-      <li><a href="/institucional">Institucional</a></li>
-      <li><a href="/informacion">Información</a></li>
+      <li>
+        <a href="/" class={$page.url.pathname === '/' ? 'active' : ''}>Inicio</a>
+      </li>
+      <li>
+        <a href="/carreras" class={$page.url.pathname === '/carreras' ? 'active' : ''}>Carreras</a>
+      </li>
+      <li>
+        <a href="/institucional" class={$page.url.pathname === '/institucional' ? 'active' : ''}>Institucional</a>
+      </li>
+      <li>
+        <a href="/informacion" class={$page.url.pathname === '/informacion' ? 'active' : ''}>Información</a>
+      </li>
     </ul>
   </nav>
 </header>
