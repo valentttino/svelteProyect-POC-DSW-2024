@@ -1,6 +1,7 @@
 <script>
   import diploma from '../assets/diploma-icon.svg'
   export let section
+
 </script>
 
 <style>
@@ -14,7 +15,9 @@
     text-align: center;
     font-weight: bold;
   }
+
 </style>
+
 <div>
   <img src={diploma} alt="Diploma Icon" class="icon" />
   <div class="container">
