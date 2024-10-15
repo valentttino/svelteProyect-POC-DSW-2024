@@ -29,7 +29,7 @@
 
 </style>
 
-
+<Header />
 <WelcomeSection text={text}/>
 <div class="CardContainer">
   <Card section={"Diplomaturas"}/>
