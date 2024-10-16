@@ -1,0 +1,23 @@
+<style>
+  footer {
+    background-color: #EEEEEE;
+    padding: 10px 0 10px 0;
+    margin:0;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+    font-size: 0.9rem;
+    color: black;
+    height: 80px;
+    width: 100%;
+  }
+  p{
+    margin:0;
+  }
+</style>
+
+<footer>
+  <p><strong>&copy; 2024 Boggio Valentino, Larrauri Martina, Leali Bruno, Zapata Nicolás.</strong></p>
+  <p><strong>Todos los derechos reservados.</strong></p>
+  <p>PoC - Desarrollo de Software</p>
+  <p>UTN Rosario</p>
+</footer>

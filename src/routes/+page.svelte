@@ -5,9 +5,16 @@
   import DescriptionSection from '../components/DescriptionSection.svelte'
   import Footer from '../components/Footer.svelte'
 
-  import Card from '../components/Card.svelte'
 
   import data from '../data/data.json'
+  
+  let sections = [{section: "Diplomaturas", icon: "../assets/diploma-icon.svg"},
+                  {section: "Tecnicaturas", icon: "../assets/diploma-icon.svg"},
+                  {section: "Licenciaturas", icon: "../assets/diploma-icon.svg"},
+                  {section: "Maestrías", icon: "../assets/diploma-icon.svg"},
+                  {section: "Ingenierías", icon: "../assets/diploma-icon.svg"},
+                  {section: "Especializaciones", icon: "../assets/diploma-icon.svg"}
+                ]
   console.log(data)
 
   const text="Bienvenido a la UTN Rosario"
@@ -20,29 +27,25 @@
 <style>
   :global(body){
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
   }
 
-    .CardContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    max-width: 50%; 
-    padding-top: 5%;
-    margin: 0 auto; 
+  :global(.back){
+    background-color: #EEEEEE;
   }
 
+  main {
+    flex: 1;
+  }
 
 </style>
 
 <Header />
-<WelcomeSection text={text}/>
-<div class="CardContainer">
-  <Card section={"Diplomaturas"}/>
-  <Card section={"Tecnicaturas"}/>
-  <Card section={"Licenciaturas"}/>
-  <Card section={"Maestrías"}/>
-  <Card section={"Ingenierías"}/>
-  <Card section={"Especializaciones"}/>
-</div>
-<CardGrid {data} />
-<DescriptionSection textodescr={textodescr}/>
+<main>
+  <WelcomeSection text={text}/>
+  <section class='back'>
+    <CardGrid itemsInicio={sections}/>
+    <DescriptionSection textodescr={textodescr}/>
+  </section>
+</main>
 <Footer />
