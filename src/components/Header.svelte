@@ -6,7 +6,7 @@
 
 <style>
   header {
-    background-color: #fff;
+    background-color: #EEEEEE;
     padding: 10px;
     box-shadow: 0px 2px 2px -2px gray;
   }
