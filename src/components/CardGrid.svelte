@@ -12,7 +12,7 @@
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px; 
     max-width: 80%; 
-    padding-top: 5%;
+    padding: 2% 0%;
     margin: 0 auto; 
   }
 

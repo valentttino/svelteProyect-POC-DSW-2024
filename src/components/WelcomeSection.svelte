@@ -10,10 +10,14 @@
     text-align: center;
     align-items: center;
   }
+
+  .text{
+    padding: 30px 0;
+  }
 </style>
 
 <body>
-  <h1>
+  <h1 class="text">
     {text}
   </h1>
 </body>

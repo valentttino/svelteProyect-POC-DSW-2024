@@ -23,17 +23,25 @@
 <style>
   :global(body){
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
   }
 
   :global(.back){
     background-color: #EEEEEE;
   }
+
+  main {
+    flex: 1;
+  }
+
 </style>
 
 <Header />
-<WelcomeSection text={text}/>
-<section class='back'>
-  <CardGrid itemsInicio={sections}/>
-  <DescriptionSection />
-</section>
+<main>
+  <WelcomeSection text={text}/>
+  <section class='back'>
+    <CardGrid itemsInicio={sections}/>
+    <DescriptionSection />
+  </section>
+</main>
 <Footer />

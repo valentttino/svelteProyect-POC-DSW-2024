@@ -2,6 +2,7 @@
   import Header from "../../components/Header.svelte"
   import Carrousel from "../../components/Carrousel.svelte"
   import Footer from "../../components/Footer.svelte"
+
 </script>
 
 <Header />
