@@ -1,6 +1,6 @@
 <style>
   footer {
-    background-color: #f8f9fa;
+    background-color: #EEEEEE;
     padding: 1rem;
     text-align: center;
     border-top: 1px solid #dee2e6;

@@ -25,12 +25,15 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
+  .cards{
+    background-color: #EEEEEE;
+  }
 </style>
 
 <Header />
 <WelcomeSection text={text}/>
-<section>
+<section class='cards'>
   <CardGrid itemsInicio={sections}/>
+  <DescriptionSection />
 </section>
-<DescriptionSection />
 <Footer />
