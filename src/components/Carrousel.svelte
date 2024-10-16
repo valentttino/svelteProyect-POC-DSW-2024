@@ -33,21 +33,25 @@
 </script>
 
 <style>
+  .novedades{
+    background-color: #EEEEEE;
+  }
+
 .carousel {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   width: 100%;
-  height: 400px; /* Mantener altura fija */
-  background-color: black; /* Bordes negros a los costados si la imagen es más pequeña */
+  height: 400px; 
+  background-color: #EEEEEE; 
   overflow: hidden;
 }
 
 .carousel img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; /* Mantener proporciones, agregar bordes si necesario */
+  object-fit: contain; 
   background-color: black;
   transition: transform 0.5s ease-in-out;
 }
@@ -95,23 +99,26 @@
 
 .prev {
   position: absolute;
-  left: 20px; /* Fija los botones a los lados */
+  left: 20px;
 }
 
 .next {
   position: absolute;
-  right: 20px; /* Fija los botones a los lados */
+  right: 20px;
 }
 </style>
 
+<div class="novedades">
+  <h1>NOVEDADES</h1>
+</div>
 <div class="carousel">
-<img src={slides[currentIndex].image} alt="Image Carousel" />
-<div class="text-overlay">
-  <h2>{slides[currentIndex].title}</h2>
-  <p>{slides[currentIndex].description}</p>
-</div>
-<div class="buttons">
-  <button class="prev" on:click={prev}>&lt;</button>
-  <button class="next" on:click={next}>&gt;</button>
-</div>
+  <img src={slides[currentIndex].image} alt="Image Carousel" />
+  <div class="text-overlay">
+    <h2>{slides[currentIndex].title}</h2>
+    <p>{slides[currentIndex].description}</p>
+  </div>
+    <div class="buttons">
+      <button class="prev" on:click={prev}>&lt;</button>
+      <button class="next" on:click={next}>&gt;</button>
+    </div>
 </div>

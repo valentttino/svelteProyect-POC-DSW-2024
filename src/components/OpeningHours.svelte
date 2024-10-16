@@ -19,14 +19,6 @@
     flex: 1; 
   }
 
-  .info-box h2 {
-    font-size: 1.5em;
-    margin: 0;
-    padding-bottom: 30px;
-    text-align: center;
-    color: #333;
-  }
-
   .info-box p {
     padding: 5px;
     margin: 0;

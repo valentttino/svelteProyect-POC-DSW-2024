@@ -5,6 +5,11 @@
   </script>
   
   <style>
+    a{
+      text-decoration: none;
+      color: black;
+    }
+
     .article-container {
       display: flex;
       align-items: flex-start;
@@ -35,7 +40,8 @@
       color: #666;
     }
   </style>
-  
+ 
+<a href="/desarrollo">
   <div class="article-container">
     <img src={imageSrc} alt={title} class="article-image" />
     <div class="article-content">
@@ -43,3 +49,4 @@
       <p class="article-text">{text}</p>
     </div>
   </div>
+</a>
