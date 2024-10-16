@@ -7,12 +7,12 @@
   .icon {
     width: 70px;
     height: 70px;
-    filter: brightness(0) invert(1);
   }
 
   .container {
     text-align: center;
     font-weight: bold;
+    color: black;
   }
 </style>
 
