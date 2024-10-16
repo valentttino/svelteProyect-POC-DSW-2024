@@ -21,6 +21,10 @@
     background-color: #EEEEEE;
     padding: 20px;
   }
+
+  h2{
+    text-align: center;
+  }
 </style>
 
 <Header />
@@ -28,6 +32,7 @@
 
 <section class="back">
   <CardGrid itemsInfo={sections}/>
+  <h2>HORARIOS DE ATENCIÓN</h2>
   <OpeningHours/>
   <ContactForm />
 </section>
