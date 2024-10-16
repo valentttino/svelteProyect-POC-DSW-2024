@@ -4,9 +4,10 @@
 
 <style>
   .container{
-    height: 150px;
-    width: 180px;
+    height: 200px;
+    width: 250px;
     border: 2px;
+    border-style: solid;
     border-color: #201E43;
     display: flex;
     flex-direction: column;
@@ -16,15 +17,18 @@
 
   .neutroColor{
     width: 100%;
-    height: 70%;
+    height: 65%;
     background-color: #201E43;
   }
 
   .text{
     width: 100%;
-    height: 30%;
+    height: 35%;
     text-align: center;
-    align-items: center;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
   }
 </style>
 
