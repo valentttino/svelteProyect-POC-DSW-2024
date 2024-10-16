@@ -19,9 +19,6 @@
     font-size: 2.5rem;
   }
 
-  .text{
-    padding: 30px 0;
-  }
 </style>
 
 <div class="welcome-section">

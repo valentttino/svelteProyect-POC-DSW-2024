@@ -44,11 +44,11 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 2. Instala las dependencias con el siguiente comando:
 
    ```bash
-   pnpm install
+   npm install
 
 Ejecuta el servidor de desarrollo:
 
-    pnpm run dev
+    npm run dev
 
 Abre tu navegador en <http://localhost:5173> para ver el proyecto en acción.
 
@@ -59,4 +59,4 @@ El grupo de **Svelte** en la categoría de **frontend-frameworks** fue integrado
 - Boggio Valentino.
 - Larrauri Martina.
 - Leali Bruno.
-- Zapata Nicolas.
+- Zapata Nicolás.

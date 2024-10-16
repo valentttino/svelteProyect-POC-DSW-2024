@@ -1,5 +1,6 @@
 <script>
   import user from '../assets/user-icon.svg'
+  export let link
   export let section
 </script>
 
@@ -14,9 +15,12 @@
     font-weight: bold;
     color: black;
   }
+
 </style>
 
 <figure class="container">
-  <img src={user} alt="User Icon" class="icon" />
-    <h4><b>{section}</b></h4> 
+  <a href={link}>
+    <img src={user} alt="User icon" class="icon" />
+    <h4><b>{section}</b></h4>
+  </a>
 </figure>

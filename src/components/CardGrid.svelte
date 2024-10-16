@@ -16,12 +16,16 @@
     margin: 0 auto; 
   }
 
+  .sin-subrayar{
+    text-decoration: none;
+  }
+
 </style>
 
 
 <div class="grid-container">
-  {#each itemsInfo as {section, icon}}
-    <CardInfo section={section} icon={icon}/>
+  {#each itemsInfo as {section, icon, link}}
+    <a href={link} class="sin-subrayar"><CardInfo section={section} icon={icon}/></a>
   {/each}
 </div>
 
