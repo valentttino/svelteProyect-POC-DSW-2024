@@ -1,6 +1,6 @@
 <script>
   import CardInfo from "./CardInfo.svelte"
-  import Card from "./Card.svelte"
+  import CardPrincipal from "./CardPrincipal.svelte"
 
   export let itemsInicio = [];
   export let itemsInfo = [];
@@ -27,6 +27,6 @@
 
 <div class="grid-container">
   {#each itemsInicio as {section, icon}}
-    <Card section={section} icon={icon}/>
+    <CardPrincipal section={section} icon={icon}/>
   {/each}
 </div>
