@@ -7,34 +7,43 @@
   
   <style>
     body{
-        background-color: #201E43;
-    color: white;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-    margin: 0; 
-    padding: 100px;
+        background-color: #EEEEEE;
+       color: black;
+       display: flex; 
+       flex-direction: column;
+       justify-content: flex; 
+        align-items: center; 
+       height: 100vh; 
+       margin: 0; 
+       padding: 50px;
     }
     img {
     height: 100px; 
-    margin-right: 10px; 
+    margin-left: 10px; 
   }
-
-  h6 {
+  .content {
     display: flex;
     align-items: center; 
+    max-width: 50%; 
+  }
+
+
+  h6 {
+   display: flex;
+    align-items: center; 
     margin: 0; 
+
   }
 
   </style> 
 
   
   <body>
+    <div class="content">
     <h6>
         <img src={logo} alt="Logo Facultad" />
     
       {textodescr}
     </h6>
+  </div>
   </body>
