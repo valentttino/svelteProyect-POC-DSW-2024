@@ -1,5 +1,6 @@
 <script>
   import Header from '../../components/Header.svelte'
+  import IntroSection from '../../components/IntroSection.svelte'
   import CardGrid from '../../components/CardGrid.svelte'
   import Footer from '../../components/Footer.svelte'
 
@@ -10,7 +11,7 @@
 </script>
 
 <Header />
-<h1>Información</h1>
+<IntroSection text={"Información"}/>
 
 <section>
   <CardGrid itemsInfo={sections}/>
