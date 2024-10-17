@@ -1,3 +1,20 @@
+<script>
+  let name = ''
+  let phone = ''
+  let mail = ''
+  let message = ''
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    alert("Formulario enviado con éxito")
+
+    name = ''
+    phone = ''
+    mail = ''
+    message = ''
+  }
+</script>
+
 <style>
   h2{
     color:black;
@@ -50,19 +67,19 @@ input[type=submit]:hover {
 <div class="container">
   <h2>FORMULARIO DE CONTACTO</h2>
 
-  <form>
+  <form on:submit={handleSubmit}>
 
     <label for="name">Nombre</label>
-    <input type="text" id="name" name="firstname" placeholder="Nombre*">
+    <input type="text" id="name" bind:value={name} placeholder="Nombre*">
 
     <label for="phone">Teléfono</label>
-    <input type="phone" id="phone" name="phone" placeholder="Teléfono*">
+    <input type="phone" id="phone" bind:value={phone} placeholder="Teléfono*">
 
     <label for="mail">Mail</label>
-    <input type="mail" id="mail" name="mail" placeholder="Mail*">
+    <input type="mail" id="mail" bind:value={mail} placeholder="Mail*">
 
     <label for="message">Mensaje</label>
-    <textarea id="message" name="message" placeholder="Mensaje*" style="height:200px"></textarea>
+    <textarea id="message" bind:value={message} placeholder="Mensaje*" style="height:200px"></textarea>
 
     <input type="submit" value="ENVIAR CONSULTA">
 
