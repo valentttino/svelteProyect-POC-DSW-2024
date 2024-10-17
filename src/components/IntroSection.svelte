@@ -28,6 +28,8 @@
   h2{
     font-size: large;
     margin-top: 10px;
+    padding-left: 250px;
+    padding-right: 250px;
   }
 </style>
 

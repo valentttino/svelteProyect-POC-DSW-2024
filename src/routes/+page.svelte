@@ -9,7 +9,7 @@
   import data from '../data/data.json'
   
   let sections = [{urlCard:"/desarrollo", section: "Diplomaturas"},
-                  {urlCard:"/desarrollo", section: "Tecnicaturas"},
+                  {urlCard:"/tecnicaturas", section: "Tecnicaturas"},
                   {urlCard:"/desarrollo", section: "Licenciaturas"},
                   {urlCard:"/desarrollo", section: "Maestrías"},
                   {urlCard:"/desarrollo", section: "Ingenierías"},

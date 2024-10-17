@@ -62,7 +62,7 @@
         <a href="/" class={$page.url.pathname === '/' ? 'active' : ''}>Inicio</a>
       </li>
       <li>
-        <a href="/carreras" class={$page.url.pathname === '/carreras' ? 'active' : ''}>Carreras</a>
+        <a href="/desarrollo" class={$page.url.pathname === '/carreras' ? 'active' : ''}>Carreras</a>
       </li>
       <li>
         <a href="/institucional" class={$page.url.pathname === '/institucional' ? 'active' : ''}>Institucional</a>

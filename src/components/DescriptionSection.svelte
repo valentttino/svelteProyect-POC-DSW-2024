@@ -1,49 +1,55 @@
 <script>
-    export let textodescr
-    import logo from '../assets/facultad-icon.svg';
+  export let textodescr;
+  import logo from '../assets/facultad-icon.svg';
+</script>
 
 
-  </script>
-  
-  <style>
-    body{
-        background-color: #EEEEEE;
-       color: black;
-       display: flex; 
-       flex-direction: column;
-       justify-content: flex; 
-        align-items: center; 
-       height: 100vh; 
-       margin: 0; 
-       padding: 50px;
-    }
-    img {
-    height: 100px; 
-    margin-left: 10px; 
-  }
-  .content {
+<style>
+  .wrapper {
     display: flex;
-    align-items: center; 
-    max-width: 50%; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #EEEEEE; 
   }
 
-
-  h6 {
-   display: flex;
+  .content {
+    background-color: #EEEEEE;
+    color: black;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-start; 
     align-items: center; 
-    margin: 0; 
-
+    padding: 50px;
+    max-width: 65%;
   }
 
-  </style> 
+  .logo-container {
+    background-color: #2A2A5E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 200px;
+    margin-right: 20px;
+  }
 
-  
-  <body>
-    <div class="content">
-    <h6>
-        <img src={logo} alt="Logo Facultad" />
-    
-      {textodescr}
-    </h6>
+  img {
+    height: 100px; 
+    filter: invert(1);
+  }
+
+  p {
+    margin: 0;
+    text-align: justify;
+  }
+</style>
+
+<div class="wrapper">
+  <div class="content">
+    <div class="logo-container">
+      <img src={logo} alt="Logo Facultad" />
+    </div>
+    <p>{textodescr}</p>
   </div>
-  </body>
+</div>
