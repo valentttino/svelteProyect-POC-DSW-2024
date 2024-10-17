@@ -1,7 +1,7 @@
 <script>
   import diploma from '../assets/diploma-icon.svg'
   export let section
-
+  export let urlCard
 </script>
 
 <style>
@@ -43,7 +43,7 @@
   }
 </style>
 
-<a href="/">
+<a href="{urlCard}">
   <div class="container">
       <img src={diploma} alt="Diploma Icon" class="icon" />
       <div class="text">

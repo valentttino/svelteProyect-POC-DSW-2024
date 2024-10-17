@@ -8,12 +8,12 @@
 
   import data from '../data/data.json'
   
-  let sections = [{section: "Diplomaturas", icon: "../assets/diploma-icon.svg"},
-                  {section: "Tecnicaturas", icon: "../assets/diploma-icon.svg"},
-                  {section: "Licenciaturas", icon: "../assets/diploma-icon.svg"},
-                  {section: "Maestrías", icon: "../assets/diploma-icon.svg"},
-                  {section: "Ingenierías", icon: "../assets/diploma-icon.svg"},
-                  {section: "Especializaciones", icon: "../assets/diploma-icon.svg"}
+  let sections = [{urlCard:"/desarrollo", section: "Diplomaturas"},
+                  {urlCard:"/desarrollo", section: "Tecnicaturas"},
+                  {urlCard:"/desarrollo", section: "Licenciaturas"},
+                  {urlCard:"/desarrollo", section: "Maestrías"},
+                  {urlCard:"/desarrollo", section: "Ingenierías"},
+                  {urlCard:"/desarrollo", section: "Especializaciones"}
                 ]
   console.log(data)
 
