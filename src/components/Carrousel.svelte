@@ -3,18 +3,13 @@
   const slides = [
     {
       image: "/src/assets/image1.jpg",
-      title: "Título 1",
-      description: "Descripción breve de la primera imagen."
+      title: "Ciencia y Tecnología para la Sociedad",
+      description: "Nuestros estudiantes desarrollan proyectos reales y adquieren habilidades para transformar el mundo."
     },
     {
       image: "/src/assets/image2.jpg",
-      title: "Título 2",
-      description: "Descripción breve de la segunda imagen."
-    },
-    {
-      image: "/src/assets/image3.jpg",
-      title: "Título 3",
-      description: "Descripción breve de la tercera imagen."
+      title: "Vive la Experiencia UTN",
+      description: "Explora nuestras instalaciones de investigación y disfruta de nuestras actividades sociales."
     },
     {
       image: "/src/assets/image4.jpg",
@@ -35,6 +30,13 @@
 <style>
   .novedades{
     background-color: #EEEEEE;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  h1{
+    margin: 0;
+    font-size: 2rem;
   }
 
 .carousel {
@@ -43,7 +45,7 @@
   align-items: center;
   position: relative;
   width: 100%;
-  height: 400px; 
+  height: 470px; 
   background-color: #EEEEEE; 
   overflow: hidden;
 }
@@ -112,7 +114,7 @@
   <h1>NOVEDADES</h1>
 </div>
 <div class="carousel">
-  <img src={slides[currentIndex].image} alt="Image Carousel" />
+  <img src={slides[currentIndex].image} alt={slides[currentIndex].description} />
   <div class="text-overlay">
     <h2>{slides[currentIndex].title}</h2>
     <p>{slides[currentIndex].description}</p>

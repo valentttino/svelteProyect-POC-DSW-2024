@@ -5,6 +5,11 @@
 </script>
 
 <style>
+   .articles-wrapper {
+    background-color: #EEEEEE; 
+    padding: 16px;
+  }
+
   a {
     text-decoration: none;
     color: black;
@@ -46,12 +51,14 @@
   }
 </style>
 
-<a href="/desarrollo">
-  <div class="article-container">
-    <img src={imageSrc} alt={title} class="article-image" />
-    <div class="article-content">
-      <h2 class="article-title">{title}</h2>
-      <p class="article-text">{text}</p>
+<div class="articles-wrapper">
+  <a href="/desarrollo">
+    <div class="article-container">
+      <img src={imageSrc} alt={title} class="article-image" />
+      <div class="article-content">
+        <h2 class="article-title">{title}</h2>
+        <p class="article-text">{text}</p>
+      </div>
     </div>
-  </div>
-</a>
+  </a>
+</div>
