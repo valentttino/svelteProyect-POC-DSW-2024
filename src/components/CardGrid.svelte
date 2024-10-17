@@ -1,9 +1,11 @@
 <script>
   import CardInfo from "./CardInfo.svelte"
   import CardPrincipal from "./CardPrincipal.svelte"
+  import CardCourses from "./CardCourses.svelte"
 
   export let itemsInicio = []
   export let itemsInfo = []
+  export let itemsCourses = []
 </script>
 
 <style>
@@ -32,5 +34,11 @@
 <div class="grid-container">
   {#each itemsInicio as {urlCard, section}}
     <CardPrincipal urlCard={urlCard} section={section}/>
+  {/each}
+</div>
+
+<div class="grid-container">
+  {#each itemsCourses as {title}}
+    <CardCourses title={title}/>
   {/each}
 </div>
