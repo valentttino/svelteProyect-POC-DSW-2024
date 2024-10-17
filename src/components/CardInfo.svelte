@@ -15,7 +15,6 @@
     font-weight: bold;
     color: black;
   }
-
 </style>
 
 <figure class="container">

@@ -1,11 +1,11 @@
 <script>
-  export let imageSrc = '';  
-  export let title = '';    
-  export let text = '';      
+  export let imageSrc = ''
+  export let title = ''
+  export let text = ''  
 </script>
 
 <style>
-   .articles-wrapper {
+  .articles-wrapper {
     background-color: #EEEEEE; 
     padding: 16px;
   }

@@ -10,6 +10,7 @@
     height: 80px;
     width: 100%;
   }
+  
   p{
     margin:0;
   }

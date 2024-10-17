@@ -4,9 +4,6 @@
   import CardGrid from '../components/CardGrid.svelte'
   import DescriptionSection from '../components/DescriptionSection.svelte'
   import Footer from '../components/Footer.svelte'
-
-
-  import data from '../data/data.json'
   
   let sections = [{urlCard:"/desarrollo", section: "Diplomaturas"},
                   {urlCard:"/tecnicaturas", section: "Tecnicaturas"},
@@ -15,7 +12,6 @@
                   {urlCard:"/desarrollo", section: "Ingenierías"},
                   {urlCard:"/desarrollo", section: "Especializaciones"}
                 ]
-  console.log(data)
 
   const text="Bienvenido a la UTN Rosario"
 
@@ -36,7 +32,6 @@
   main {
     flex: 1;
   }
-
 </style>
 
 <Header />

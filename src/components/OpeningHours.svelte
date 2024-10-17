@@ -1,5 +1,5 @@
 <script>
-  import horarios from "../data/horarios.json";
+  import horarios from "../data/horarios.json"
 </script>
 
 <style>

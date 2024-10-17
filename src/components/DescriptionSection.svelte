@@ -1,6 +1,6 @@
 <script>
-  export let textodescr;
-  import logo from '../assets/facultad-icon.svg';
+  export let textodescr
+  import logo from '../assets/facultad-icon.svg'
 </script>
 
 

@@ -39,27 +39,27 @@
   margin-top: 6px; 
   margin-bottom: 16px; 
   resize: vertical 
-}
+  }
 
-input[type=submit] {
-  background-color: black;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  align-items: center;
-}
+  input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+  }
 
-input[type=submit]:hover {
-  background-color: #134B70;
-}
+  input[type=submit]:hover {
+    background-color: #134B70;
+  }
 
-.container {
-  padding: 20px;
-}
+  .container {
+    padding: 20px;
+  }
 
-::placeholder {
+  ::placeholder {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Ensure it uses the same font */
   }
 </style>
@@ -68,7 +68,6 @@ input[type=submit]:hover {
   <h2>FORMULARIO DE CONTACTO</h2>
 
   <form on:submit={handleSubmit}>
-
     <label for="name">Nombre</label>
     <input type="text" id="name" bind:value={name} placeholder="Nombre*">
 
@@ -82,6 +81,5 @@ input[type=submit]:hover {
     <textarea id="message" bind:value={message} placeholder="Mensaje*" style="height:200px"></textarea>
 
     <input type="submit" value="ENVIAR CONSULTA">
-
   </form>
 </div>

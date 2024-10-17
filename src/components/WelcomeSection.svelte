@@ -18,7 +18,6 @@
     margin:0;
     font-size: 2.5rem;
   }
-
 </style>
 
 <div class="welcome-section">
