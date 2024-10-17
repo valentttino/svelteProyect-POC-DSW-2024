@@ -1,19 +1,40 @@
 <script>
   import Header from '../../components/Header.svelte'
+  import IntroSection from '../../components/IntroSection.svelte'
   import CardGrid from '../../components/CardGrid.svelte'
+  import ContactForm from '../../components/ContactForm.svelte'
   import Footer from '../../components/Footer.svelte'
+	import OpeningHours from '../../components/OpeningHours.svelte';
 
-  let sections = [{section: "Autogestión Alumnos", icon: "../assets/user-icon.svg"},
-                  {section: "Autogestión Docentes", icon: "../assets/user-icon.svg"},
-                  {section: "CVG", icon: "../assets/user-icon.svg"}
-                ];
+  let sections = [{section: "Autogestión Alumnos", icon: "../assets/user-icon.svg", link:"https://www.alumnos.frro.utn.edu.ar/"},
+                  {section: "Autogestión Docentes", icon: "../assets/user-icon.svg", link:"https://www.docentes.frro.utn.edu.ar/"},
+                  {section: "CVG", icon: "../assets/user-icon.svg", link:"https://frro.cvg.utn.edu.ar/"}
+                ]  
 </script>
+<style>
+  :global(body){
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+  }
+
+  :global(.back){
+    background-color: #EEEEEE;
+    padding: 20px;
+  }
+
+  h2{
+    text-align: center;
+  }
+</style>
 
 <Header />
-<h1>Información</h1>
+<IntroSection text={"Información"}/>
 
-<section>
+<section class="back">
   <CardGrid itemsInfo={sections}/>
+  <h2>HORARIOS DE ATENCIÓN</h2>
+  <OpeningHours/>
+  <ContactForm />
 </section>
 
 <Footer />

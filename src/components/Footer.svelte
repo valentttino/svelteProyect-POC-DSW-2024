@@ -1,14 +1,14 @@
 <style>
   footer {
     background-color: #EEEEEE;
-    padding: 1rem;
+    padding: 10px 0 10px 0;
+    margin:0;
     text-align: center;
     border-top: 1px solid #dee2e6;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     font-size: 0.9rem;
     color: black;
+    height: 80px;
+    width: 100%;
   }
   p{
     margin:0;

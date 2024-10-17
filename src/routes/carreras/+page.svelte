@@ -1,5 +1,6 @@
 <script>
   import Header from "../../components/Header.svelte"
+  import IntroSection from "../../components/IntroSection.svelte"
   import CardCourses from "../../components/CardCourses.svelte"
   import Footer from "../../components/Footer.svelte"
 
