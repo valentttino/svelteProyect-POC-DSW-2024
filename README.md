@@ -14,21 +14,26 @@ El proyecto consiste en una página web demostrativa que busca replicar la estru
 
 - **Acceso al CVG:** Una sección con acceso directo al sistema de gestión de contenidos de la facultad.
 - **Acceso al SYSACAD:** Un acceso directo al Sistema de Autogestión de Alumnos.
-- **Información de carreras:** Un apartado de información que muestre las carreras ofrecidas por la facultad, indicando descripciones, perfiles del ingeniero, títulos intermedios, planes de estudio, etc.
+- **Información de tecnicaturas:** Un apartado de información que muestre las tecnicaturas ofrecidas por la facultad.
+
+- **Noticias e imagenes institucionales:** Se exponen distintas noticias propias de la universidad y un carrousel de imagenes para mostrar aquellas destacadas.
+
+- **Horarios de atención:** Una sección información que cuenta con la descripción de los horarios de atención para alumnos y egresados, la dirección en forma de mapa de la facultad y un formulario para enviar una consulta.
 
 ## Estructura del Proyecto
 
-El proyecto está compuesto por los siguientes componentes:
+El proyecto está compuesto por las siguientes rutas:
 
-- `Header.svelte`: Encabezado de la página con navegación a las secciones principales.
-- `WelcomeSection.svelte`: Sección de bienvenida con un mensaje personalizado de acuerdo a la URL donde se encuentra.
-- `CardGrid.svelte`: Contenedor de las tarjetas para organizar la presentación visual.
-- `Card.svelte`: Componente individual de tarjeta para mostrar accesos a distintos apartados.
-- `Footer.svelte`: Pie de página con información institucional y del grupo.
+- **/institucional:** Se muestra un carrousel con imagenes demostrativas y pequeñas descripciones de las mismas. Le siguen un apartado de noticias traidas desde `news.json`
 
-### Archivos principales
+- **/informacion:** La cual muestra los accesos a las páginas de autogestión, los horarios de contacto traídos desde `horarios.json` y un formulario de contacto.
 
-- `data.json`: Archivo de datos que contiene información estática sobre las carreras.
+- **/tecnicaturas:** Donde se muestran cards con algunas de las tecnicaturas brindadas por la Universidad.
+
+- **/desarrollo:** Se muestra el componente `desarrollo.svelte` el cual utilizamos para acortar las funcionalidades de la página.
+
+### Archivo principal
+
 - `+page.svelte`: Página principal que organiza los componentes y muestra la estructura completa de la web.
 
 ## Tecnologías utilizadas
